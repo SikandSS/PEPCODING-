@@ -1,0 +1,16 @@
+import java.util.*;
+  
+  public class Main{
+  
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int t = scn.nextInt();
+    int rem;
+    
+    while(t!=0){
+    rem = t % 10;
+    t = t / 10;
+    System.out.println(rem);
+    }
+  }
+}

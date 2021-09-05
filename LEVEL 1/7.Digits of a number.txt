@@ -1,0 +1,19 @@
+import java.util.*;
+  
+  public class Main{
+  
+  public static void main(String[] args) {
+    Scanner scn = new Scanner(System.in);
+    int t = scn.nextInt();
+    int rem;
+    int b = (int)Math.floor(Math.log10(t) + 1);
+    b = (int)Math.pow(10,b-1);
+    
+    do{
+    rem = t / b;
+    t = t % b;
+    System.out.println(rem);
+    b = b / 10;
+    }while(t!=0);
+  }
+}
